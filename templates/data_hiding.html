@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EncrypT-Data Hiding</title>
+  </head>
+  <body>
+    {% extends "header_footer.html" %} {% block content %}
+
+    <div class="row mt-5 mb-3">
+      <div class="col-1"></div>
+      <div class="col-11 mb-5">
+        <h1 class="ml-3 text-muted text-uppercase font-weight-bold">
+          Different Data Hiding Methods
+        </h1>
+        <h6 class="ml-3 text-muted font-weight-bold">
+          * select any method according to your requirement and wish by clicking
+          on start.
+        </h6>
+      </div>
+    </div>
+
+    <div class="row pl-5">
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center bg-info text-white"
+            style="font-size: 1.3em"
+          >
+            Method 1
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Data HIDING I</h5>
+            <p class="card-text">
+              In this method every data will get hidden inside your image using
+              the LSB method and you can use it for any format of image.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Data Hiding
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center"
+            style="font-size: 1.3em"
+          >
+            Method 2
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Data Extraction I</h5>
+            <p class="card-text">
+              In this method you can decrypt your data that has been encrypted
+              by "Data HIDING I" in text format by entering its symmetric key.
+            </p>
+            <button
+              type="button"
+              class="btn btn-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal1"
+            >
+              Start Data Hiding
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center bg-info text-white"
+            style="font-size: 1.3em"
+          >
+            Method 3
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Data HIDING II</h5>
+            <p class="card-text">
+              This method gives you to hide large amount of data inside images
+              and you can use it for any format of image.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Data Hiding
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center"
+            style="font-size: 1.3em"
+          >
+            Method 4
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Data Extraction II</h5>
+            <p class="card-text">
+              In this method you can decrypt your data that has been encrypted
+              by "Data HIDING II" in text format by entering its symmetric key.
+            </p>
+            <button
+              type="button"
+              class="btn btn-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal1"
+            >
+              Start Data Hiding
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center bg-info text-white"
+            style="font-size: 1.3em"
+          >
+            Method 5
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Data HIDING III</h5>
+            <p class="card-text">
+              This method gives you to hide large amount of data inside images
+              and as well protect it with a symmetric key.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Data Hiding
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center"
+            style="font-size: 1.3em"
+          >
+            Method 6
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Data Extraction III</h5>
+            <p class="card-text">
+              In this method you can decrypt your data that has been encrypted
+              by "Data HIDING III" in text format by entering its symmetric key.
+            </p>
+            <button
+              type="button"
+              class="btn btn-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal1"
+            >
+              Start Data Hiding
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Get Your Result
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleFormControl" required
+                    >Select Method Number</label
+                  >
+                  <select
+                    class="form-control"
+                    id="exampleFormControl"
+                    name="method_type"
+                  >
+                    <option>Select</option>
+                    <option>Method 1</option>
+                    <option>Method 3</option>
+                    <option>Method 5</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Choose a Image:</label>
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="exampleFormControl"
+                    name="file"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label"
+                    >Enter New Image Name:</label
+                  >
+
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    name="new_img_name"
+                  ></textarea>
+                  <label for="message-text" class="col-form-label"
+                    >* For better quality give name in
+                    <span class="font-weight-bold">.png:</span></label
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label"
+                    >Enter Password:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    name="passwd"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label"
+                    >Enter Text For Hiding:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    rows="6"
+                    name="hiding_data"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button class="btn btn-info" type="submit">Get Result</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Button trigger modal -->
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <form action="/data_hiding" method="POST" enctype="multipart/form-data">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Get Your Result
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleFormControl" required
+                    >Select Method Number</label
+                  >
+                  <select
+                    class="form-control"
+                    id="exampleFormControl"
+                    name="method_type"
+                  >
+                    <option>Select</option>
+                    <!-- <option >Method 1</option> -->
+                    <option>Method 2</option>
+                    <!-- <option >Method 3</option> -->
+                    <option>Method 4</option>
+                    <!-- <option >Method 5</option> -->
+                    <option>Method 6</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Choose a Image:</label>
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="exampleFormControl"
+                    name="file"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label"
+                    >Enter Password:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    name="passwd"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button class="btn btn-info" type="submit">Get Result</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    {% endblock content %}
+  </body>
+</html>

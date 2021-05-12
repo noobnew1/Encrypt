@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EncrypT-Encryption</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("select")
+          .change(function () {
+            $(this)
+              .find("option:selected")
+              .each(function () {
+                var optionValue = $(this).attr("value");
+                if (optionValue == "method6") {
+                  $("#radio22").show();
+                } else {
+                  $("#radio22").hide();
+                }
+              });
+          })
+          .change();
+      });
+    </script>
+
+    <style>
+      #radio22 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    {% extends "header_footer.html" %} {% block content %}
+
+    <div class="row mt-5 mb-3">
+      <div class="col-1"></div>
+      <div class="col-11 mb-5">
+        <h1 class="ml-3 text-muted text-uppercase font-weight-bold">
+          Different Encryption Methods
+        </h1>
+        <h6 class="ml-3 text-muted font-weight-bold">
+          * select any method according to your requirement and wish by clicking
+          on start.
+        </h6>
+      </div>
+    </div>
+
+    <div class="row pl-5">
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center bg-info text-white"
+            style="font-size: 1.3em"
+          >
+            Method 1
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Replacement Algorithm I</h5>
+            <p class="card-text">
+              In this method every character will get replaced by the other
+              character which is increased by a specific interval i.e. with
+              other.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Encryption
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center"
+            style="font-size: 1.3em"
+          >
+            Method 2
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Character Increment</h5>
+            <p class="card-text">
+              In this method every character will get changed by the other
+              character which is increased by a specific interval i.e. for it is
+              7.
+            </p>
+            <button
+              type="button"
+              class="btn btn-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Encryption
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center bg-info text-white"
+            style="font-size: 1.3em"
+          >
+            Method 3
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Character Increment</h5>
+            <p class="card-text">
+              In this method every character will get changed by the other
+              character which is increased by a specific interval i.e. for it is
+              13.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Encryption
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center"
+            style="font-size: 1.3em"
+          >
+            Method 4
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Replacement Algorithm II</h5>
+            <p class="card-text">
+              In this method encryption will be performed character by character
+              and will be replaced by unique value for every character.
+            </p>
+            <button
+              type="button"
+              class="btn btn-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Encryption
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center bg-info text-white"
+            style="font-size: 1.3em"
+          >
+            Method 5
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Base64 Algorithm</h5>
+            <p class="card-text">
+              In this method encryption is done on base64. It will generate a
+              secret key as well as encrypted text.Key will be generated
+              randomly.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Encryption
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4 col-xl-3">
+        <div class="card border-dark mb-3 shadow" style="max-width: 24rem">
+          <div
+            class="card-header font-weight-bold text-center"
+            style="font-size: 1.3em"
+          >
+            Method 6
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Key Based Algorithm</h5>
+            <p class="card-text">
+              In this method you have to enter data as well as a key. In this
+              method key is important as need for decryption of data.
+            </p>
+            <button
+              type="button"
+              class="btn btn-info pl-3 pr-3 pt-2 ml-2 mt-2 mb-1"
+            >
+              Read More
+            </button>
+            <button
+              type="button"
+              class="btn btn-info pl-4 pr-4 pt-2 pb-2 ml-2 mt-2 mb-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Start Encryption
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <form action="/encryption" method="POST">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Get Your Result
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!-- <form action="/encryption" method="POST" name="passdata"> -->
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleFormControl" required
+                    >Select Method Number</label
+                  >
+                  <select
+                    class="form-control"
+                    id="exampleFormControl"
+                    name="method_type"
+                  >
+                    <option>Select</option>
+                    <option>Method 1</option>
+                    <option>Method 2</option>
+                    <option>Method 3</option>
+                    <option>Method 4</option>
+                    <option>Method 5</option>
+                    <option value="method6">Method 6</option>
+                  </select>
+                </div>
+
+                <div class="form-group" id="radio22">
+                  <label for="message-text" class="col-form-label"
+                    >Enter Key For Encryption:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    name="encryption_key"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label"
+                    >Enter Text For Encryption:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    rows="6"
+                    name="encryption_data"
+                    required=""
+                  ></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button class="btn btn-info" type="submit">Get Result</button>
+              </div>
+              <!-- </form> -->
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    {% endblock content %}
+  </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EncrypT</title>
+
+    <!-- ---Method for linking css file. its an example which u can refer -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='style.css')}}"
+    />
+  </head>
+  <body>
+    {% extends "header_footer.html" %} {% block content %}
+
+    <!-- slider start from here -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{{url_for('static',filename='image/encryption1.jpg')}}"
+            alt="Los Angeles"
+            width="1100"
+            height="600"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{{url_for('static',filename='image/encryption.jpg')}}"
+            alt="Chicago"
+            width="1100"
+            height="600"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{{url_for('static',filename='image/encryption2.jpg')}}"
+            alt="New York"
+            width="1100"
+            height="600"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- slider end here -->
+
+    <div class="row mt-5 mb-3">
+      <div class="col-12">
+        <h2 class="text-center text-muted text-uppercase font-weight-bold">
+          Know More
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-lg-4 p-2">
+        <img
+          src="{{url_for('static',filename='image/crypto.jpg')}}"
+          class="rounded shadow crypto mx-auto"
+          alt="cryptography"
+        />
+      </div>
+      <!-- <div class="col-1"></div> -->
+      <div class="col-lg-4">
+        <h3 class="text-info pl-3 pt-3">Cryptography</h3>
+        <p class="text-dark p-3">
+          Cryptography is a method of protecting information and communications
+          through the use of codes, so that only those for whom the information
+          is intended can read and process it. The prefix "crypt-" means
+          "hidden" or "vault" -- and the suffix "-graphy" stands for "writing."
+          Cryptography is a method of protecting information and communications
+          through the use of codes, so that only those for whom the information
+          is intended can read and process it. The prefix "crypt-" means
+          "hidden" or "vault" -- and the suffix "-graphy" stands for "writing."
+        </p>
+        <button type="button" class="btn btn-info pl-2 pt-2 ml-3">
+          Read More
+        </button>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-1"></div>
+      <div class="col-lg-4 mt-5">
+        <h3 class="text-info pl-3 pt-3">Steganography</h3>
+        <p class="text-dark p-3">
+          Steganography is an ancient practice. When spies in the Revolutionary
+          War wrote in invisible ink or when Da Vinci embedded secret meaning in
+          a painting that was steganography. This works in the digital world,
+          too, where a file like an image can be stealthily encoded with
+          information. For example, pixel values, brightness, and filter
+          settings for an image are normally changed to affect the image's
+          aesthetic look. But hackers can also manipulate them based on a secret
+          code with no regard for how the inputs make the image look visually.
+        </p>
+        <button type="button" class="btn btn-info pl-2 pt-2 ml-3">
+          Read More
+        </button>
+      </div>
+      <div class="col-lg-4 p-2 mt-5">
+        <img
+          src="{{url_for('static',filename='image/crypto3.jpg')}}"
+          class="rounded shadow crypto mx-auto"
+          alt="cryptography"
+        />
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row mt-5 mb-3">
+      <div class="col-12">
+        <h2 class="text-center text-muted text-uppercase font-weight-bold">
+          Utilities Tools
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-xl-3 m-1 ml-5">
+        <!-- Card -->
+        <div class="card testimonial-card shadow">
+          <!-- Background color -->
+          <div class="card-up indigo lighten-1"></div>
+
+          <!-- Avatar -->
+          <div class="avatar mx-auto white">
+            <img
+              src="{{url_for('static',filename='image/crypto1.jpeg')}}"
+              class="rounded-circle"
+              alt="team member"
+              height="250px"
+              width="250px"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body">
+            <!-- Name -->
+            <h4 class="card-title">Data Encryption</h4>
+            <hr />
+            <!-- Quotation -->
+            <p>
+              Encryption is a process that encodes a message or file so that it
+              can be only be read by certain people. Encryption uses an
+              algorithm to scramble, or encrypt, data and then uses a key for
+              the receiving party to unscramble, or decrypt, the information.
+              <br />
+              Click Here For Encryption Data.
+            </p>
+            <a href="{{'encryption'}}"
+              ><button type="button" class="btn btn-info pl-1 pt-1">
+                Click Here
+              </button></a
+            >
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+
+      <div class="col-xl-3 pl-2 m-1">
+        <!-- Card -->
+        <div class="card testimonial-card shadow">
+          <!-- Background color -->
+          <div class="card-up indigo lighten-1"></div>
+
+          <!-- Avatar -->
+          <div class="avatar mx-auto white">
+            <img
+              src="{{url_for('static',filename='image/decryption.jpeg')}}"
+              class="rounded-circle"
+              alt="woman avatar"
+              height="250px"
+              width="250px"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body">
+            <!-- Name -->
+            <h4 class="card-title">Data Decryption</h4>
+            <hr />
+            <!-- Quotation -->
+            <p>
+              Decryption is the process of transforming data that has been
+              rendered unreadable through encryption back to its unencrypted
+              form. In decryption, the system extracts and converts the garbled
+              data and transforms it to texts and images that are easily
+              understandable.
+              <br />
+              Click Here For Decrypt Data.
+            </p>
+            <a href="{{'decryption'}}"
+              ><button type="button" class="btn btn-info pl-1 pt-1">
+                Click Here
+              </button></a
+            >
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+
+      <div class="col-xl-3 pl-2 m-1">
+        <!-- Card -->
+        <div class="card testimonial-card shadow">
+          <!-- Background color -->
+          <div class="card-up indigo lighten-1"></div>
+
+          <!-- Avatar -->
+          <div class="avatar mx-auto white">
+            <img
+              src="{{url_for('static',filename='image/stegno.png')}}"
+              class="rounded-circle"
+              alt="steganography image"
+              height="250px"
+              width="250px"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body">
+            <!-- Name -->
+            <h4 class="card-title">Hide Data</h4>
+            <hr />
+            <!-- Quotation -->
+            <p>
+              Steganography is the technique of hiding secret data within an
+              ordinary, non-secret, file or message in order to avoid detection;
+              the secret data is then extracted at its destination.
+              <br />
+              Click Here For Decrypt Data.
+            </p>
+            <a href="{{'data_hiding'}}"
+              ><button type="button" class="btn btn-info pl-1 pt-1">
+                Click Here
+              </button></a
+            >
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <div class="row mt-5 mb-3">
+      <div class="col-12">
+        <h2 class="text-center text-muted text-uppercase font-weight-bold">
+          About Team
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-md-4">
+        <!-- Card -->
+        <div class="card testimonial-card">
+          <!-- Background color -->
+          <div class="card-up indigo lighten-1"></div>
+
+          <!-- Avatar -->
+          <div class="avatar mx-auto white">
+            <img
+              src="{{url_for('static',filename='image/team1.jpeg')}}"
+              class="rounded-circle"
+              alt="team member"
+              height="250px"
+              width="250px"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body">
+            <!-- Name -->
+            <h4 class="card-title">Prahalad Trisoliya</h4>
+            <hr />
+            <!-- Quotation -->
+            <p>
+              <i class="fas fa-quote-left"></i> Front end developer with
+              knowledge of HTML, CSS, Bootstrap, JavaScript, Jquery,
+              Python(Flask).
+            </p>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+
+      <div class="col-md-4 pl-2">
+        <!-- Card -->
+        <div class="card testimonial-card">
+          <!-- Background color -->
+          <div class="card-up indigo lighten-1"></div>
+
+          <!-- Avatar -->
+          <div class="avatar mx-auto white">
+            <img
+              src="{{url_for('static',filename='image/team2.jpeg')}}"
+              class="rounded-circle"
+              alt="team member"
+              height="250px"
+              width="250px"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body">
+            <!-- Name -->
+            <h4 class="card-title">Niyati Dubey</h4>
+            <hr />
+            <!-- Quotation -->
+            <p>
+              <i class="fas fa-quote-left"></i>Coder with the knowledge of
+              Cryptography and Steganography using Python.
+            </p>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    {% endblock content %}
+  </body>
+</html>

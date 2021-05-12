@@ -1,0 +1,44 @@
+{% extends "header_footer.html" %} {% block content %}
+
+<div class="row">
+  <div class="col-12" style="min-height: 450px; max-height: auto; width: auto">
+    <div row="row">
+      <div
+        class="col-xl-6 col-lg-8 col-md-9 col-sm-10 border border-white rounded mx-auto shadow-lg mt-5 p-2"
+        style="background: #eeeeee"
+      >
+        <h2 class="font-weight-bold p-2 ml-2 mt-2">Output:</h2>
+        <br />
+        <h3 class="ml-4">
+          Method Used: <span class="text-info">{{method_type}}</span>
+        </h3>
+        <h3 class="ml-4">
+          Output:
+          <span class="text-info" style="overflow-x: scroll">{{result}}</span>
+        </h3>
+
+        {% if tt==1 %}
+
+        <h3 class="ml-4">
+          Key:
+          <span class="text-info" style="overflow-x: scroll; width: 80%"
+            >{{result1[:40]}}</span
+          >
+        </h3>
+        <h3 class="ml-4">
+          <span class="text-info" style="overflow-x: scroll; width: 80%"
+            >{{result1[40:90]}}</span
+          >
+        </h3>
+        <h3 class="ml-4">
+          <span class="text-info" style="overflow-x: scroll; width: 80%"
+            >{{result1[90:130]}}</span
+          >
+        </h3>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

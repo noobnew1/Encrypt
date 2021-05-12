@@ -1,0 +1,31 @@
+{% extends "header_footer.html" %} {% block content %}
+
+<div class="row">
+  <div class="col-12" style="min-height: 450px; max-height: auto; width: auto">
+    <div row="row">
+      <div
+        class="col-xl-6 col-lg-8 col-md-9 col-sm-10 border border-white rounded mx-auto shadow-lg mt-5 p-2"
+        style="background: #eeeeee"
+      >
+        <h1 p-2 ml-2 mt-2>HEY! DONE SUCESSFULLY</h1>
+        <br />
+        <h3 class="ml-4">
+          Method Used: <span class="text-info">{{method_type}}</span>
+        </h3>
+
+        {% if tt==1 %}
+
+        <h2 class="ml-4">YOUR IMAGE HAS BEEN SAVED SUCESSFULLY!!!</h2>
+
+        {% else %}
+        <h3 class="ml-3">
+          YOUR HIDDEN MESSAGE IS:<span class="text-info">{{path}}</span>
+        </h3>
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
